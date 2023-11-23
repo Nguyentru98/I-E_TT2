@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   outline: none;
-  font-weight: 400;
+  font-weight: 600;
 }
 .body {
   line-height: 1.5;
@@ -93,7 +93,6 @@
 }
 .main-footer {
   width: 80%;
-  height: 100px;
   position: absolute;
   top: 0px;
   left: 20%;
@@ -102,30 +101,41 @@
 .main-content {
   width: 100%;
   padding: 50px 100px;
-  background-color: #61a3ba;
+  background-color: #1d5d9b;
 }
 .home {
-  display: flex;
-  transition: all 0.3s ease;
   margin-bottom: 50px;
   padding: 20px;
-  background-color: #ffff;
   border-radius: 30px;
-  -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.62);
-  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.62);
+  color: #ffff;
 }
-
+.home-title {
+  display: flex;
+}
+.home-image {
+  width: 50%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .home-content {
   width: 100%;
 }
 .home-content h3 {
   font-size: 28px;
   margin: 15px 0;
+
 }
 .home-content span {
-  font-size: 30px;
-  font-weight: lighter;
-  color: rgb(245, 49, 49);
+  font-size: 40px;
+  font-weight: 600;
+  color: #0F0F0F;
+  font-family: "Dancing Script", cursive;
 }
 .home-content p {
   margin-bottom: 50px;
@@ -133,7 +143,7 @@
   line-height: 1.5;
   font-size: large;
 }
-.home-content a {
+.home a {
   display: inline-block;
   padding: 10px 30px;
   background-color: #f05941;
@@ -156,6 +166,7 @@
 .information {
   margin-bottom: 50px;
   line-height: 1.5;
+  color: #ffff;
 }
 .information-title {
   margin-bottom: 10px;
@@ -171,7 +182,7 @@
 .personal-information {
   display: flex;
   padding: 20px;
-  background-color: #ffff;
+  /* background-color: #ffff; */
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.62);
   box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.62);
@@ -185,7 +196,7 @@
 .information-col-2 p,
 .information-col-1 p {
   padding: 10px 0;
-  border-bottom: 1px solid #dfddd7;
+  border-bottom: 1px solid #a3a3a2;
   font-weight: 600;
 }
 .information-col-3 p span,
@@ -193,6 +204,8 @@
 .information-col-1 p span {
   margin-left: 5px;
   font-weight: 300;
+  color: #fa5036;
+  font-weight: 400;
 }
 .information-col-2 {
   margin: 0 15px;
@@ -293,6 +306,7 @@
 }
 .project-text h2 {
   font-weight: 600;
+  color: #ffff;
 }
 
 .project-card {
@@ -373,6 +387,7 @@
 .social h2 {
   margin-bottom: 20px;
   font-weight: 600;
+  color: #ffff;
 }
 .social-card {
   display: flex;
@@ -430,6 +445,7 @@
 .contact h2 {
   margin-bottom: 20px;
   font-weight: 600;
+  color: #ffff;
 }
 .card-visit {
   width: 45%;
@@ -500,6 +516,7 @@
   width: 100%;
   text-align: center;
   padding: 10px;
+  color: #fff;
 }
 .input {
   margin-top: 10px;
