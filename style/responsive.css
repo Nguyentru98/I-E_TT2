@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1031px) {
   .main-content {
     width: 100%;
     padding: 50px 20px;
@@ -7,14 +7,32 @@
   .send-button {
     width: 20%;
   }
+  .send-button span {
+    font-size: large;
+  }
   .card-visit {
     width: 70%;
   }
 
   @media (max-width: 768px) {
     .social-card {
-      flex-wrap: wrap;
+      flex-direction: column;
+      padding: auto;
     }
+    .social-fb ,
+    .social-yt ,
+    .social-email {
+      width: 100%;
+    }
+    .social h2,
+    .social h2,
+    .social h2,
+    .contact h2 {
+      font-size: medium;
+    }
+    .social-yt {
+        margin: 15px 0;
+    } 
     .send-button {
       width: 25%;
     }
@@ -35,6 +53,17 @@
     .italia {
       margin: 10px 0;
     }
+    .personal-information {
+      flex-direction: column;
+    }
+    .information-col-1,
+    .information-col-2,
+    .information-col-3 {
+      width: 80%;
+    }
+    .information-col-2 {
+        margin: 15px 0;
+      }
   }
   @media (max-width: 432px) {
     .avatar,
@@ -46,6 +75,51 @@
       display: block;
       margin: 30px 0 0 0;
       font-size: 30px;
+    }
+    .home-content h3,
+    .home-content h3 span {
+        font-size: medium;
+    }
+    .home-content h3 {
+        padding: auto;
+    }
+    .information-col-1 p,
+    .information-col-1 p,
+    .information-col-1 p {
+        font-size: medium;
+    }
+    .information-col-1 p span,
+    .information-col-1 p span,
+    .information-col-1 p span {
+        font-size: medium;
+    }
+    .skill-js h3,
+    .skill-js h3,
+    .skill-js h3 {
+        font-size: medium;
+    }
+    .skill-js span,
+    .skill-js span,
+    .skill-js span {
+        font-size: medium;
+    }
+    .before-18 h2,
+    .after-18 h2 {
+        font-size: medium;
+    }
+    .elementary h3 ,
+    .elementary p ,
+    .university h3 ,
+    .university p {
+        font-size: medium;
+    }
+    .project-text h2 {
+        font-size: medium;
+    }
+    }
+    .information-title h2,
+    .information-title p {
+        font-size: medium;
     }
     .side-menu li a {
       display: none;
@@ -76,6 +150,7 @@
     .social-yt,
     .social-email {
       width: 100%;
+      font-size: small;
     }
 
     .social-yt {
@@ -84,5 +159,24 @@
     .send-mail {
       padding: 0;
     }
+    .send-mail h3 {
+      font-size: medium;
+    }
+    .send-button {
+      width: 40%;
+    }
+    .send-button span {
+        font-size: small;
+    }
+    .contact-name h4,
+    project-text h3 {
+        font-size: medium;
+    }
+    .card-icon {
+        font-size: small;
+    }
+    .footer-logo {
+        font-size: small;
+    }
   }
-}
+
