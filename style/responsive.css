@@ -1,0 +1,81 @@
+@media (max-width: 1024px) {
+  .main-content {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #61a3ba;
+  }
+  .send-button {
+    width: 20%;
+  }
+  .card-visit {
+    width: 70%;
+  }
+
+  @media (max-width: 768px) {
+    .social-card {
+      flex-wrap: wrap;
+    }
+    .send-button {
+      width: 25%;
+    }
+    .card-visit {
+      width: 100%;
+    }
+    .about-coll-1,
+    .about-coll-2 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .education {
+      flex-direction: column;
+    }
+    .project-card {
+      flex-direction: column;
+    }
+    .italia {
+      margin: 10px 0;
+    }
+  }
+  @media (max-width: 432px) {
+    .avatar,
+    .logo {
+      display: none;
+    }
+    .bars-menu {
+      display: block;
+      display: block;
+      margin: 30px 0 0 0;
+      font-size: 30px;
+    }
+    .personal-information {
+      flex-direction: column;
+    }
+    .information-col-1,
+    .information-col-2,
+    .information-col-3 {
+      width: 100%;
+    }
+    .information-col-2 {
+      margin: 15px 0;
+    }
+    .about-coll-1,
+    .about-coll-2 {
+      margin: 15px 0;
+    }
+    .social-card {
+      flex-direction: column;
+    }
+    .social-fb,
+    .social-yt,
+    .social-email {
+      width: 100%;
+    }
+
+    .social-yt {
+      margin: 10px 0;
+    }
+    .send-mail {
+      padding: 0;
+    }
+  }
+}
