@@ -6,14 +6,13 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   outline: none;
-  font-weight: 600;
+  font-weight: 400;
 }
 .body {
   line-height: 1.5;
   font-size: 16px;
 }
 /* container */
-
 .container {
   width: 100%;
   max-width: 1280px;
@@ -38,6 +37,8 @@
   background-color: #ffff;
   display: flex;
   flex-direction: column;
+  transition: all 0.4s ease;
+  z-index: 999;
 }
 .side-avatar {
   display: flex;
@@ -91,7 +92,7 @@
 .side-menu li a:hover {
   color: #ee3519;
 }
-.main-footer {
+.main {
   width: 80%;
   position: absolute;
   top: 0px;
@@ -129,12 +130,11 @@
 .home-content h3 {
   font-size: 28px;
   margin: 15px 0;
-
 }
 .home-content span {
   font-size: 40px;
   font-weight: 600;
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-family: "Dancing Script", cursive;
 }
 .home-content p {
@@ -233,17 +233,63 @@
   color: #dddddd;
 }
 .scroll-background-js {
-  width: 40%;
-  height: 100%;
-  border-radius: 20px;
-  background-color: #ee3519;
+  animation-name: scroll-background-js;
+  animation-duration: 3s;
+  position: relative;
+  animation: scroll-background-js 1s ease forwards;
+}
+@keyframes scroll-background-js {
+  0% {
+    width: 0px;
+    height: 100%;
+    background-color: #ee3519;
+  }
+  100% {
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ee3519;
+  }
 }
 .scroll-background-html {
-  width: 75%;
-  height: 100%;
-  border-radius: 20px;
-  background-color: #ee3519;
+  animation-name: scroll-background-html;
+  animation-duration: 3s;
+  position: relative;
+  animation: scroll-background-html 1s ease forwards;
 }
+@keyframes scroll-background-html {
+  0% {
+    width: 0px;
+    height: 100%;
+    background-color: #ee3519;
+  }
+  100% {
+    width: 75%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ee3519;
+  }
+}
+.scroll-background-css {
+  animation-name: scroll-background-css;
+  animation-duration: 3s;
+  position: relative;
+  animation: scroll-background-css 1s ease forwards;
+}
+@keyframes scroll-background-css {
+  0% {
+    width: 0px;
+    height: 100%;
+    background-color: #ee3519;
+  }
+  100% {
+    width: 55%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ee3519;
+  }
+}
+
 .scroll-background-css {
   width: 60%;
   height: 100%;
@@ -312,6 +358,7 @@
 .project-card {
   display: flex;
   width: 100%;
+  margin-bottom: 50px;
   justify-content: space-between;
 }
 .avahome,
@@ -380,6 +427,86 @@
 .portfolio:hover .project-hover {
   opacity: 1;
 }
+/* timeline */
+.challenge h2 {
+  font-weight: 600;
+  color: #fff;
+}
+.timeline-container {
+  width: 100%;
+  margin: 20px auto;
+}
+.timeline {
+  position: relative;
+  width: 100%;
+}
+.text-box {
+  border: 1px solid #dddddd;
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 15px;
+  font-size: 15px;
+  color: #ffff;
+}
+.timeline-box {
+  width: 50%;
+  height: 50%;
+  padding: 10px 30px;
+  position: relative;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+}
+/* .timeline-box::after {
+  width: 20px;
+  height: 20px;
+  background: #f05941;
+  border-radius: 50%;
+  position: absolute;
+  right: -13px;
+  top: 50%;
+  z-index: 10;
+} */
+.timline-box h2,
+.timline-box h3 {
+  font-weight: 400;
+}
+.left-timeline {
+  left: 0;
+}
+.right-timeline {
+  right: -50%;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #ffff;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+}
+.circle-left {
+  width: 20px;
+  height: 20px;
+  background: #f05941;
+  border-radius: 50%;
+  position: absolute;
+  right: -13px;
+  top: 50%;
+  z-index: 10;
+}
+.circle-right {
+  width: 20px;
+  height: 20px;
+  background: #f05941;
+  border-radius: 50%;
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  z-index: 10;
+}
+
 /* social */
 .social {
   margin-bottom: 50px;
@@ -414,6 +541,7 @@
 .social-yt i,
 .social-email i {
   font-size: 40px;
+  margin-bottom: 20px;
 }
 .social-fb h3,
 .social-yt h3,
@@ -425,7 +553,6 @@
 .social-yt p,
 .social-email p {
   font-weight: 600;
-  opacity: 0.7;
 }
 .social-fb p span,
 .social-yt p span,
@@ -448,8 +575,8 @@
   color: #ffff;
 }
 .card-visit {
-  width: 45%;
-  margin-bottom: 30px;
+  width: 60%;
+  margin-bottom: 25px;
   padding: 10px;
   position: relative;
   border-radius: 10px;
@@ -489,7 +616,7 @@
 /* background-svg */
 .custom-shape-divider-bottom-1700673281 {
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -564,7 +691,7 @@
   border: 1px solid #e1dede;
 }
 .send-button {
-  width: 13%;
+  width: 14%;
   margin-top: 20px;
   padding: 10px 20px;
   border-radius: 30px;
@@ -580,6 +707,26 @@
   display: block;
   color: #fff;
 }
+/* back to top */
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 2%;
+  bottom: 25%;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: rgba(252, 252, 252, 0.5);
+  cursor: pointer;
+}
+.back-to-top:hover {
+  background-color: rgba(146, 139, 139, 0.5);
+}
+.back-to-top i {
+  width: 100%;
+  height: 100%;
+  font-size: xx-large;
+}
+
 /* footer */
 .footer {
   width: 100%;
@@ -602,4 +749,33 @@
   display: block;
   text-align: center;
   width: 100%;
+}
+
+/* scroll animate */
+.active{
+  transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+.timeline-box:nth-child(odd) {
+  margin-left: -120px;
+}
+
+.timeline-box:nth-child(even) {
+  margin-left: 120px;
+}
+
+.active:nth-child(odd) {
+  transform: translate3d(120px, 0, 0);
+}
+
+.active:nth-child(even) {
+  transform: translate3d(-120px, 0, 0);
+}
+
+.toogle {
+  z-index: 999;
+  width: 30%;
+  transition: all 0.4s ease;
 }

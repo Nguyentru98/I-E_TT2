@@ -4,16 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/responsive.css">
-    <!-- js -->
-    <script src="js/menu.js"></script>
-    <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-
-    <!-- font -->
+    <link rel="stylesheet" href="https://trunv.thuctap.inevn.com/TT-02/style/index.css">
+    <link rel="stylesheet" href="https://trunv.thuctap.inevn.com/TT-02/style/responsive.css">
+    <link rel="stylesheet" href="/style/contact.css">
+    <link rel="stylesheet" href="/style/project.css">
+    <link rel="stylesheet" href="/style/social.css">
+    <link rel="stylesheet" href="/style/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,8 +23,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
-
-    <!-- titile -->
+    <link rel="stylesheet" href="style/responsive.css">
     <link rel="icon" href="https://th.bing.com/th/id/OIP.tD1D8HG3aGmPuudIdnvGSAHaHa?rs=1&pid=ImgDetMain">
     <title>portfolio Tru.NV</title>
 </head>
@@ -35,10 +31,10 @@
 <body>
     <div class="container">
         <!-- sidebar -->
-        <div class="sidebar" id="sidebar" onclick="toggleSidebar()">
+        <div class="sidebar">
             <div class="side-avatar">
                 <div class="avatar">
-                    <img src="assets/avatar.jpg" alt="">
+                    <img src="/assets/avatar.jpg" alt="">
                 </div>
                 <div class="logo">
                     <a href="#"><span>N</span>.Trụ</a>
@@ -50,48 +46,44 @@
             <ul class="side-menu">
                 <li>
                     <i class="fas fa-home"></i>
-                    <a href="#home" onclick="scrollingMenu('.home')">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
                     <i class="fas fa-user"></i>
-                    <a href="#about" onclick="scrollingMenu('.about')">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
                     <i class="fas fa-tasks"></i>
-                    <a href="#project" onclick="scrollingMenu('.project')">Project</a>
+                    <a href="#project">Project</a>
                 </li>
                 <li>
                     <i class="fas fa-globe"></i>
-                    <a href="#social" onclick="scrollingMenu('.social')">Social</a>
+                    <a href="#social">Social</a>
                 </li>
                 <li>
                     <i class="fas fa-comments"></i>
-                    <a href="#contact" onclick="scrollingMenu('.contact')">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
-        <div class="main">
+        <div class="main-footer">
             <!-- content -->
             <div class="main-content">
                 <div class="home">
-                    <div class="home-title">
-                        <div class="home-content">
-                            <h3>Xin chào tên tôi là <span>Nguyễn Văn Trụ</span></h3>
-                            <h3>Tôi là một <span>Front-End Developer</span></h3>
-                            <p>
-                                Tôi đã tốt nghiệp chuyên ngành tự động hóa Cao Đẳng Bách Khoa Hà Nội
-                                và tôi cũng đã hoàn thành khóa học Bootcamp Javascript
-                                tại trung tâm đào tạo lập trình viên hiện đại tại CodeGym...
-                            </p>
-                        </div>
-                        <div class="home-image">
-                            <img src="assets/home.jpg" alt="">
-                        </div>
+                    <div class="home-content">
+                        <h3>Xin chào tên tôi là <span>Nguyễn Văn Trụ</span></h3>
+                        <h3>Tôi là một <span>Front-End Developer</span></h3>
+                        <p>
+                            Tôi đã tốt nghiệp chuyên ngành tự động hóa Cao Đẳng Bách Khoa Hà Nội
+                            và tôi cũng đã hoàn thành khóa học Bootcamp Javascript
+                            tại trung tâm đào tạo lập trình viên hiện đại tại CodeGym...
+                        </p>
+                        <a href="#">xem thêm</a>
                     </div>
-                    <a href="#">xem thêm</a>
                 </div>
 
                 <div class="about">
+
                     <div class="information">
                         <div class="information-title">
                             <h2>Sơ yếu lý lịch</h2>
@@ -109,7 +101,7 @@
                                 <p>Tuổi: <span>25</span></p>
                                 <p>Bằng cấp: <span>Cao Đẳng</span></p>
                                 <p>SĐT: <span>(+84) 965486148</span></p>
-                                <p>Sở thích: <span>Ăn uống, phượt về quê</span></p>
+                                <p>Sở thích: <span>ăn uống, phượt về quê</span></p>
                             </div>
                             <div class="information-col-3">
                                 <div class="js">
@@ -144,7 +136,7 @@
                         </div>
                     </div>
 
-                    <!-- <div class="education">
+                    <div class="education">
                         <div class="about-coll-1">
                             <div class="before-18">
                                 <h2>Trước 18 tuổi</h2>
@@ -220,7 +212,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                 </div>
 
@@ -230,7 +222,7 @@
                     </div>
                     <div class="project-card">
                         <div class="avahome">
-                            <img src="assets/avahome.png" alt="">
+                            <img src="/assets/avahome.png" alt="">
                             <div class="project-hover">
                                 <h3>AvaHome</h3>
                                 <span>
@@ -239,7 +231,7 @@
                             </div>
                         </div>
                         <div class="italia">
-                            <img src="assets/italia.png" alt="">
+                            <img src="/assets/italia.png" alt="">
                             <div class="project-hover">
                                 <h3>Khoa tiếng Italia (HNAU)</h3>
                                 <span>
@@ -248,7 +240,7 @@
                             </div>
                         </div>
                         <div class="portfolio">
-                            <img src="assets/portfolio.png" alt="">
+                            <img src="/assets/portfolio.png" alt="">
                             <div class="project-hover">
                                 <h3>Website portfolio</h3>
                                 <span>
@@ -257,47 +249,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- timeline -->
-                    <div class="challenge">
-                        <h2>Thử thách tại I&E Việt Nam</h2>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline">
-                            <div class="timeline-box left-timeline">
-                                <div class="circle-left"></div>
-                                <div class="text-box">
-                                    <h2>Thử thách số 1 (Đã xong)</h2>
-                                    <small>6/11-10/11/2023</small>
-                                    <h3>Xây dựng giao diện trang web Khoa Tiếng Italia (HANU)</h3>
-                                </div>
-                            </div>
-                            <div class="timeline-box right-timeline">
-                                <div class="circle-right"></div>
-                                <div class="text-box">
-                                    <h2>Thử thách số 2 (Đã xong)</h2>
-                                    <small>6/11-10/11/2023</small>
-                                    <h3>Lập một website giới thiệu bản thân (portfolio)</h3>
-                                </div>
-                            </div>
-                            <div class="timeline-box left-timeline">
-                                <div class="circle-left"></div>
-                                <div class="text-box">
-                                    <h2>Thử thách số 3 (Chuẩn bị...)</h2>
-                                    <small>6/11-10/11/2023</small>
-                                    <h3>Xây dựng giao diện trang web Khoa Tiếng Italia (HANU)</h3>
-                                </div>
-                            </div>
-                            <div class="timeline-box right-timeline">
-                                <div class="circle-right"></div>
-                                <div class="text-box">
-                                    <h2>Thử thách số 4 (Chuẩn bị...)</h2>
-                                    <small>6/11-10/11/2023</small>
-                                    <h3>Xây dựng giao diện trang web Khoa Tiếng Italia (HANU)</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
                 <div class="social">
@@ -305,15 +256,18 @@
                     <div class="social-card">
                         <div class="social-fb">
                             <i class="fab fa-facebook" style="color: #125fe2;"></i>
-                            <p><span>Nguyễn Trụ</span></p>
+                            <h3>Facebook</h3>
+                            <p>Facebook: <span>Nguyễn Trụ</span></p>
                         </div>
                         <div class="social-yt">
                             <i class="fab fa-youtube" style="color: #ce1c40;"></i>
-                            <p><span>Nguyễn Trụ-hn</span></p>
+                            <h3>Youtobe</h3>
+                            <p>Youtobe: <span>Nguyễn Trụ-hn</span></p>
                         </div>
                         <div class="social-email">
                             <i class="fas fa-envelope" style="color: #7c65d7;"></i>
-                            <p><span>nguyentruhn@gmail.com</span></p>
+                            <h3>E-mail</h3>
+                            <p>Bạn có thể gửi mail cho tôi đến <span>nguyentruhn@gmail.com</span></p>
 
                         </div>
                     </div>
@@ -325,7 +279,7 @@
                         <div class="card-visit">
                             <div class="card-visit-inner">
                                 <div class="logo-card-visit">
-                                    <img src="assets/logo_i&E.webp" alt="">
+                                    <img src="/assets/logo_i&E.webp" alt="">
                                 </div>
                                 <div class="contact-name">
                                     <h4>Nguyễn Văn Trụ</h4>
@@ -384,10 +338,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- back to top -->
-                <div class="back-to-top" onclick="backToTop()">
-                    <i class="fas fa-chevron-up"></i></i>
                 </div>
             </div>
             <!-- footer -->
