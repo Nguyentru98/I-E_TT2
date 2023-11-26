@@ -142,14 +142,11 @@
   line-height: 1.5;
   font-size: large;
   transition: all 0.2s ease-in-out;
-  padding: 10px;
+  padding-right: 20px;
 }
 .paragraph {
   max-height: 85px;
   overflow: hidden;
-}
-#dot {
-  padding: 10px;
 }
 .home a {
   display: inline-block;
@@ -190,7 +187,6 @@
 .personal-information {
   display: flex;
   padding: 20px;
-  /* background-color: #ffff; */
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.62);
   box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.62);
@@ -214,6 +210,7 @@
   font-weight: 300;
   color: #fa5036;
   font-weight: 400;
+  z-index: 999;
 }
 .information-col-2 {
   margin: 0 15px;
@@ -304,10 +301,88 @@
   border-radius: 20px;
   background-color: #ee3519;
 }
-/* học vấn */
-.education {
+/* kỳ vọng */
+.expected-title {
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.expected-title h2 {
+  color: #fff;
+  font-weight: 600;
+}
+.expected {
+  width: 100%;
+  position: relative;
+}
+.expected-image {
+  width: 100%;
+}
+.expected-image-row-1,
+.expected-image-row-2 {
+  width: 100%;
   display: flex;
 }
+.thinking-image,
+.specialized-image,
+.work-image,
+.soft-image {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 10px;
+}
+.thinking-image img,
+.specialized-image img,
+.work-image img,
+.soft-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.expected-content {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.expected-content-row-1,
+.expected-content-row-2 {
+  width: 100%;
+  display: flex;
+}
+.thinking,
+.specialized,
+.work,
+.soft {
+  width: 50%;
+  height: 200px;
+  line-height: 2;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: rgba(232, 232, 236, 0.6);
+  color: #2B2A4C;
+  padding: 30px;
+}
+.thinking h3,
+.specialized h3,
+.work h3,
+.soft h3 {
+  font-size: 1.6em;
+  font-weight: 800;
+  z-index: 999;
+}
+.thinking div,
+.specialized div,
+.work div,
+.soft div {
+  font-size: large;
+  font-weight: 500;
+  z-index: 999;
+}
+
+/* gioi thieu */
 .about-coll-1 {
   width: 50%;
   margin-right: 10px;
