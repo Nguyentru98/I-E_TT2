@@ -63,7 +63,6 @@ function toggleSidebar() {
 }
 
 // xem thêm
-
 function seeMore() {
   var dot = document.getElementById("dot");
   var paragraph = document.querySelector(".paragraph");
