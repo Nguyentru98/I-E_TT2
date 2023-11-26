@@ -3,7 +3,6 @@
     width: 100%;
     padding: 50px 20px;
     /* background-color: #61a3ba; */
-
   }
   .send-button {
     width: 20%;
@@ -20,15 +19,15 @@
       flex-direction: column;
       padding: auto;
     }
-   .home-image {
+    .home-image {
       width: 100%;
     }
-   .home-title {
+    .home-title {
       flex-direction: column;
       margin-bottom: 10px;
     }
-    .social-fb ,
-    .social-yt ,
+    .social-fb,
+    .social-yt,
     .social-email {
       width: 100%;
     }
@@ -39,8 +38,8 @@
       font-size: medium;
     }
     .social-yt {
-        margin: 15px 0;
-    } 
+      margin: 15px 0;
+    }
     .send-button {
       width: 25%;
     }
@@ -70,8 +69,8 @@
       width: 80%;
     }
     .information-col-2 {
-        margin: 15px 0;
-      }
+      margin: 15px 0;
+    }
   }
   @media (max-width: 432px) {
     .avatar,
@@ -92,13 +91,13 @@
       font-size: small;
     }
     .home-content h3 span {
-        font-size: large;
+      font-size: large;
     }
     .home-content h3 {
-        padding: auto;
+      padding: auto;
     }
     .home-content p {
-        font-size: small;
+      font-size: small;
     }
     .home-image {
       width: 100%;
@@ -107,100 +106,142 @@
     .information-col-1 p,
     .information-col-1 p,
     .information-col-1 p {
-        font-size: medium;
+      font-size: medium;
     }
     .information-col-1 p span,
     .information-col-1 p span,
     .information-col-1 p span {
-        font-size: medium;
+      font-size: medium;
     }
     .skill-js h3,
     .skill-js h3,
     .skill-js h3 {
-        font-size: medium;
+      font-size: medium;
     }
     .skill-js span,
     .skill-js span,
     .skill-js span {
-        font-size: medium;
+      font-size: medium;
     }
     .before-18 h2,
     .after-18 h2 {
-        font-size: medium;
-    }
-    .elementary h3 ,
-    .elementary p ,
-    .university h3 ,
-    .university p {
-        font-size: medium;
-    }
-    .project-text h2 {
-        font-size: medium;
-    }
-    }
-    .information-title h2,
-    .information-title p {
-        font-size: medium;
-    }
-    .side-menu li a {
-      display: none;
-    }
-    .sidebar.toogle a {
-      display: block;
-    }
-    .side-menu li i {
-      width: 100%;
-      text-align: center;
-    }
-    .personal-information {
-      flex-direction: column;
-    }
-    .information-col-1,
-    .information-col-2,
-    .information-col-3 {
-      width: 100%;
-    }
-    .information-col-2 {
-      margin: 15px 0;
-    }
-    .about-coll-1,
-    .about-coll-2 {
-      margin: 15px 0;
-    }
-    .social-card {
-      flex-direction: column;
-    }
-    .social-fb,
-    .social-yt,
-    .social-email {
-      width: 100%;
-      font-size: small;
-    }
-
-    .social-yt {
-      margin: 10px 0;
-    }
-    .send-mail {
-      padding: 0;
-    }
-    .send-mail h3 {
       font-size: medium;
     }
-    .send-button {
-      width: 40%;
+    .elementary h3,
+    .elementary p,
+    .university h3,
+    .university p {
+      font-size: medium;
     }
-    .send-button span {
-        font-size: small;
-    }
-    .contact-name h4,
-    project-text h3 {
-        font-size: medium;
-    }
-    .card-icon {
-        font-size: small;
-    }
-    .footer-logo {
-        font-size: small;
+    .project-text h2 {
+      font-size: medium;
     }
   }
+  .information-title h2,
+  .information-title p {
+    font-size: medium;
+  }
+  .side-menu li a {
+    display: none;
+  }
+  .sidebar.toogle a {
+    display: block;
+  }
+  .toogle {
+    z-index: 999;
+    width: 30%;
+    transition: all 0.4s ease;
+  }
+  .side-menu li i {
+    width: 100%;
+    text-align: center;
+  }
+  .personal-information {
+    flex-direction: column;
+  }
+  .information-col-1,
+  .information-col-2,
+  .information-col-3 {
+    width: 100%;
+  }
+  .information-col-2 {
+    margin: 15px 0;
+  }
+  .about-coll-1,
+  .about-coll-2 {
+    margin: 15px 0;
+  }
+  .contact-row {
+    flex-direction: column;
+  }
+  .social-card {
+    flex-direction: column;
+  }
+  .social-fb,
+  .social-yt,
+  .social-email {
+    width: 100%;
+    font-size: small;
+  }
+.back-to-top {
+  padding: 10px;
+}
+.back-to-top i {
+  font-size: small;
+}
+  .social-yt {
+    margin: 10px 0;
+  }
+  .send-mail {
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+  }
+  .send-mail h3 {
+    font-size: medium;
+  }
+  .send-button {
+    width: 40%;
+  }
+  .send-button span {
+    font-size: small;
+  }
+  .contact-name h4,
+  project-text h3 {
+    font-size: medium;
+  }
+  .card-icon {
+    font-size: small;
+  }
+  .footer-logo {
+    font-size: small;
+  }
+  .timeline-box:nth-child(odd) {
+    margin-left: 120px;
+  }
+  .left-timeline,
+  .right-timeline {
+    left: 0px;
+  }
+  .active:nth-child(odd) {
+    transform: translate3d(-120px, 0, 0);
+  }
+  .challenge {
+    font-size: small;
+  }
+  .text-box h2,
+  .text-box h3 {
+    font-size: small;
+  }
+  .line-middle {
+    left: 0px;
+  }
+  .circle-line-middle {
+    left: -7px;
+  }
+  .timeline-box  {
+    width: 100%;
+  }
 
+
+}

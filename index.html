@@ -78,17 +78,19 @@
                         <div class="home-content">
                             <h3>Xin chào tên tôi là <span>Nguyễn Văn Trụ</span></h3>
                             <h3>Tôi là một <span>Front-End Developer</span></h3>
-                            <p>
+                            <p class="paragraph">
                                 Tôi đã tốt nghiệp chuyên ngành tự động hóa Cao Đẳng Bách Khoa Hà Nội
                                 và tôi cũng đã hoàn thành khóa học Bootcamp Javascript
-                                tại trung tâm đào tạo lập trình viên hiện đại tại CodeGym...
+                                tại trung tâm đào tạo lập trình viên hiện đại tại CodeGym .Hiện tại
+                                tôi đang được thực tập tại công ty I&E Việt Nam vị trí TTS Front-End Developer
+                                <div id="dot" onclick="seeMore()">...</div> 
                             </p>
                         </div>
                         <div class="home-image">
                             <img src="assets/home.jpg" alt="">
                         </div>
                     </div>
-                    <a href="#">xem thêm</a>
+                    <a href="#" id="button-home" onclick="seeMore()">xem thêm</a>
                 </div>
 
                 <div class="about">
@@ -262,9 +264,15 @@
                         <h2>Thử thách tại I&E Việt Nam</h2>
                     </div>
                     <div class="timeline-container">
-                        <div class="timeline">
-                            <div class="timeline-box left-timeline">
-                                <div class="circle-left"></div>
+                            <div class="line-middle"></div>
+                            <div class="circle-line-middle">
+                                <div class="circle-timeline"></div>  
+                                <div class="circle-timeline"></div>  
+                                <div class="circle-timeline"></div>  
+                                <div class="circle-timeline"></div>  
+                            </div>
+                        <div class="timeline"> 
+                            <div class="timeline-box left-timeline">                                                             
                                 <div class="text-box">
                                     <h2>Thử thách số 1 (Đã xong)</h2>
                                     <small>6/11-10/11/2023</small>
@@ -272,7 +280,6 @@
                                 </div>
                             </div>
                             <div class="timeline-box right-timeline">
-                                <div class="circle-right"></div>
                                 <div class="text-box">
                                     <h2>Thử thách số 2 (Đã xong)</h2>
                                     <small>6/11-10/11/2023</small>
@@ -280,7 +287,6 @@
                                 </div>
                             </div>
                             <div class="timeline-box left-timeline">
-                                <div class="circle-left"></div>
                                 <div class="text-box">
                                     <h2>Thử thách số 3 (Chuẩn bị...)</h2>
                                     <small>6/11-10/11/2023</small>
@@ -288,7 +294,6 @@
                                 </div>
                             </div>
                             <div class="timeline-box right-timeline">
-                                <div class="circle-right"></div>
                                 <div class="text-box">
                                     <h2>Thử thách số 4 (Chuẩn bị...)</h2>
                                     <small>6/11-10/11/2023</small>
@@ -374,7 +379,7 @@
                                 </div>
                                 <div class="input-row-3">
                                     <div class="message-input">
-                                        <textarea name="" id="" cols="20" rows="10"
+                                        <textarea id="message" cols="20" rows="10"
                                             placeholder="Lời Nhắn..."></textarea>
                                     </div>
                                 </div>
@@ -387,7 +392,7 @@
                 </div>
                 <!-- back to top -->
                 <div class="back-to-top" onclick="backToTop()">
-                    <i class="fas fa-chevron-up"></i></i>
+                    <i class="fas fa-chevron-up"></i>
                 </div>
             </div>
             <!-- footer -->

@@ -138,10 +138,18 @@
   font-family: "Dancing Script", cursive;
 }
 .home-content p {
-  margin-bottom: 50px;
   font-weight: lighter;
   line-height: 1.5;
   font-size: large;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+.paragraph {
+  max-height: 85px;
+  overflow: hidden;
+}
+#dot {
+  padding: 10px;
 }
 .home a {
   display: inline-block;
@@ -435,6 +443,28 @@
 .timeline-container {
   width: 100%;
   margin: 20px auto;
+  position: relative;
+}
+.line-middle {
+  width: 5px;
+  height: 100%;
+  background-color: #ffff;
+  position: absolute;
+  left: 50%;
+}
+.circle-line-middle {
+  position: absolute;
+  height: 100%;
+  left: 49.2%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.circle-timeline {
+  width: 20px;
+  height: 20px;
+  background: #ffff;
+  border-radius: 50%;
 }
 .timeline {
   position: relative;
@@ -456,16 +486,6 @@
   font-weight: 400;
   transition: all 0.5s ease-in-out;
 }
-/* .timeline-box::after {
-  width: 20px;
-  height: 20px;
-  background: #f05941;
-  border-radius: 50%;
-  position: absolute;
-  right: -13px;
-  top: 50%;
-  z-index: 10;
-} */
 .timline-box h2,
 .timline-box h3 {
   font-weight: 400;
@@ -474,17 +494,7 @@
   left: 0;
 }
 .right-timeline {
-  right: -50%;
-}
-.timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 100%;
-  background-color: #ffff;
-  top: 0;
   left: 50%;
-  z-index: 2;
 }
 .circle-left {
   width: 20px;
@@ -568,6 +578,7 @@
 }
 .contact-row {
   width: 100%;
+  display: flex;
 }
 .contact h2 {
   margin-bottom: 20px;
@@ -575,8 +586,9 @@
   color: #ffff;
 }
 .card-visit {
+  margin-right: 20px;
   width: 60%;
-  margin-bottom: 25px;
+  height: 60%;
   padding: 10px;
   position: relative;
   border-radius: 10px;
@@ -635,15 +647,15 @@
 }
 
 .send-mail {
-  width: 100%;
+  padding: 10px;
+  width: 40%;
   border-radius: 20px;
-  padding-right: 20%;
 }
 .send-mail h3 {
   width: 100%;
   text-align: center;
-  padding: 10px;
   color: #fff;
+  margin-bottom: 30px;
 }
 .input {
   margin-top: 10px;
@@ -686,12 +698,13 @@
 }
 .message-input textarea {
   width: 100%;
+  height: 100px;
   padding: 10px;
   border-radius: 20px;
   border: 1px solid #e1dede;
 }
 .send-button {
-  width: 14%;
+  width: 30%;
   margin-top: 20px;
   padding: 10px 20px;
   border-radius: 30px;
@@ -752,10 +765,10 @@
 }
 
 /* scroll animate */
-.active{
+.active {
   transform: none;
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .timeline-box:nth-child(odd) {
@@ -772,10 +785,4 @@
 
 .active:nth-child(even) {
   transform: translate3d(-120px, 0, 0);
-}
-
-.toogle {
-  z-index: 999;
-  width: 30%;
-  transition: all 0.4s ease;
 }
