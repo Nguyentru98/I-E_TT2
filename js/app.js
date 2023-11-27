@@ -8,7 +8,7 @@ function scrollingMenu(menuClass) {
   });
 }
 
-// nut back top
+// nut back to top
 function backToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -19,30 +19,32 @@ window.addEventListener("scroll", handleScroll);
 
 function handleScroll() {
   var backToTopButton = document.querySelector(".back-to-top"); // Lấy vị trí cuộn hiện tại
-  var scrollTop = window.scrollY || document.documentElement.scrollTop; // Kiểm tra nếu vị trí của trang lớn hơn 20 pixel và trang đang cuộn hoặc đứng im
-  if ((scrollTop > 20 || lastScrollTop === 0) && scrollTop > lastScrollTop) {
+  var scrollTop = document.documentElement.scrollTop;
+  console.log("scrollTop", scrollTop);
+  if (scrollTop > 20 && scrollTop > lastScrollTop) {
+    // Kiểm tra nếu vị trí của trang lớn hơn 20 pixel và trang đang cuộn hoặc đứng im
     backToTopButton.style.display = "block";
+    console.log("lastScrollTop", lastScrollTop);
   } else {
     backToTopButton.style.display = "none";
   }
-
   // Cập nhật trạng thái cuộn trước đó
   lastScrollTop = scrollTop;
 }
 
-// animate scroll
+// animate scroll timeline
+window.addEventListener("scroll", timeline);
 function timeline() {
   var timelines = document.querySelectorAll(".timeline-box");
   for (var i = 0; i < timelines.length; i++) {
-    var windowHeight = window.innerHeight; // chieu cao cua window
-    var elementTop = timelines[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+    var windowHeight = window.innerHeight; // chieu cao cua view port
+    var elementTop = timelines[i].getBoundingClientRect().top; // đỉnh viewport đến top element
+    var elementVisible = 150; // khoảng nhìn thấy element
     // console.log(
-    //   elementTop,
-    //   windowHeight,
-    //   elementVisible,
+    //   "windowHeigh",windowHeight,
+    //   "elementTop",elementTop,
+    //   "elementVisible",elementVisible,
     //   elementTop < windowHeight - elementVisible,
-    //   timelines[i]
     // );
 
     if (elementTop < windowHeight - elementVisible) {
@@ -51,15 +53,15 @@ function timeline() {
   }
 }
 
-window.addEventListener("scroll", timeline);
-
+// menu mobile
 function toggleSidebar() {
   var element = document.getElementById("sidebar");
-  if (element.classList.contains("toogle")) {
-    element.classList.remove("toogle");
-  } else {
-    element.classList.add("toogle");
-  }
+      element.classList.toggle("toogle");
+  // if (element.classList.contains("toogle")) {
+  //   element.classList.remove("toogle");
+  // } else {
+  //   element.classList.add("toogle");
+  // }
 }
 
 // xem thêm
@@ -67,8 +69,8 @@ function seeMore() {
   var dot = document.getElementById("dot");
   var paragraph = document.querySelector(".paragraph");
   var buttonHome = document.getElementById("button-home");
-  
-      paragraph.classList.remove("paragraph");
-      dot.style.display = "none";
-      buttonHome.style.display = "none";
+
+  paragraph.classList.remove("paragraph");
+  dot.style.display = "none";
+  buttonHome.style.display = "none";
 }
