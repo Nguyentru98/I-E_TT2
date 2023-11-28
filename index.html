@@ -82,15 +82,16 @@
                                 Tôi đã tốt nghiệp chuyên ngành tự động hóa Cao Đẳng Bách Khoa Hà Nội
                                 và tôi cũng đã hoàn thành khóa học Bootcamp Javascript
                                 tại trung tâm đào tạo lập trình viên hiện đại tại CodeGym .Hiện tại
-                                tôi đang được thực tập tại công ty I&E Việt Nam vị trí TTS Front-End Developer
-                            <div id="dot" onclick="seeMore()">...</div>
+                                tôi<span id="hidden"> đang được thực tập tại công ty I&E Việt Nam vị trí TTS Front-End
+                                    Developer</span><small id="dot">...</small>
+                                <small id="button-hidden-presently" onclick="seeMore()">xem thêm</small>
                             </p>
                         </div>
                         <div class="home-image">
                             <img src="assets/home.jpg" alt="">
                         </div>
                     </div>
-                    <a href="#" id="button-home" onclick="seeMore()">Xem Thêm</a>
+
                 </div>
 
                 <div class="about">
@@ -126,7 +127,7 @@
                                 <div class="html">
                                     <div class="skill-html">
                                         <h4>HTML</h4>
-                                        <span>75%</span>
+                                        <span>55%</span>
                                     </div>
                                     <div class="scroll-html">
                                         <div class="scroll-background-html"></div>
@@ -135,7 +136,7 @@
                                 <div class="css">
                                     <div class="skill-css">
                                         <h4>CSS</h4>
-                                        <span>60%</span>
+                                        <span>45%</span>
                                     </div>
                                     <div class="scroll-css">
                                         <div class="scroll-background-css"></div>
@@ -149,138 +150,54 @@
                     <div class="expected-title">
                         <h2>Kỳ Vọng Của Bản Thân</h2>
                     </div>
-                    <div class="expected">
-                        <div class="expected-image">
-                            <div class="expected-image-row-1">
-                                <div class="thinking-image">
-                                    <img src="assets/thinking.jpg" alt="">
-                                </div>
-                                <div class="specialized-image">
-                                    <img src="assets/Program.jpg" alt="">
-                                </div>
+                    <div class="chart-container">
+                        <div class="coordinates">
+                            <div class="coordinates-title">
+                                <span>Work</span>
+                                <span>Soft</span>
+                                <span>Specialized</span>
+                                <span>Thinking</span>
                             </div>
-                            <div class="expected-image-row-2">
-                                <div class="work-image">
-                                    <img src="assets/work.jpg" alt="">
-                                </div>
-                                <div class="soft-image">
-                                    <img src="assets/soft.jpg" alt="">
-                                </div>
+                            <div class="work">
+                                <div class="work-col-1"></div>
+                                <div class="work-col-2"></div>
+                            </div>
+                            <div class="soft">
+                                <div class="soft-col-1"></div>
+                                <div class="soft-col-2"></div>
+                            </div>
+                            <div class="specialized">
+                                <div class="specialized-col-1"></div>
+                                <div class="specialized-col-2"></div>
+                            </div>
+                            <div class="thinking">
+                                <div class="thinking-col-1"></div>
+                                <div class="thinking-col-2"></div>
+                            </div>
+                            <div class="percent">
+                                <div>100</div>
+                                <div>80</div>
+                                <div>60</div>
+                                <div>40</div>
+                                <div>20</div>
                             </div>
                         </div>
-                        <div class="expected-content">
-                            <div class="expected-content-row-1">
-                                <div class="thinking">
-                                    <h3>Khả Năng Tư Duy</h3>
-                                    <div>Tư duy logic</div>
-                                    <div>Tư duy thiết kế</div>
-                                    <div>Tư duy sáng tạo</div>
+                        <div class="note">
+                            <div class="note-color">
+                                <div class="present">
+                                    <div class="Present-color"></div>
+                                    <div class="present-title">Hiện tại</div>                              
                                 </div>
-                                <div class="specialized">
-                                    <h3>Kỹ Năng Chuyên Môn</h3>
-                                    <div>HTML,CSS</div>
-                                    <div>JavaScript</div>
-                                    <div>INEVO</div>
+                                <div class="future">
+                                    <div class="future-color"></div>
+                                    <div class="future-title">Sau 2 tháng</div>
                                 </div>
                             </div>
-                            <div class="expected-content-row-2">
-                                <div class="work">
-                                    <h3>Kỹ Năng Làm việc</h3>
-                                    <div>Làm việc nhóm</div>
-                                    <div>Lên kế hoạch</div>
-                                    <div>Quản lý thời gian</div>
-                                </div>
-                                <div class="soft">
-                                    <h3>Kỹ Năng Mềm</h3>
-                                    <div>Thuyết trình</div>
-                                    <div>Làm việc nhóm</div>
-                                    <div>Kỹ năng giao tiếp</div>
-                                </div>
+                            <div class="note-image">
+                                <img src="assets/avatar_2.jpg" alt="">
                             </div>
-                            
-                            
                         </div>
-
                     </div>
-
-                    <!-- <div class="education">
-                        <div class="about-coll-1">
-                            <div class="before-18">
-                                <h2>Trước 18 tuổi</h2>
-                            </div>
-                            <div class="about-text-card-1">
-                                <div class="about-time">
-                                    <i class="fas fa-calendar-alt"></i><span>2004 - 2010</span>
-                                </div>
-                                <div class="elementary">
-                                    <h3>Học tiểu học xã Hưng Công</h3>
-                                    <p>Tôi bắt đầu học lớp 1 khi tôi đủ 6 tuổi, trong thời gian 5 năm học tiểu học
-                                        tại trường tiểu học xã Hưng Công , và tốt nghiệp loại khá vào năm 2008-2009.
-                                    </p>
-                                </div>
-                                <div class="about-time">
-                                    <i class="fas fa-calendar-alt"></i><span>2010 - 2014</span>
-                                </div>
-                                <div class="elementary">
-                                    <h3>Học trung học cơ sở xã Hưng Công</h3>
-                                    <p>Tôi đã có 4 năm gắn bó tại trường trung học sơ sở
-                                        xã Hưng Công và tốt nghiệp loại khá vào năm 2012-2013
-                                    </p>
-                                </div>
-                                <div class="about-time">
-                                    <i class="fas fa-calendar-alt"></i><span>2013 - 2016</span>
-                                </div>
-                                <div class="elementary">
-                                    <h3>Học trung học phổ thông B Hà Nam</h3>
-                                    <p>Tôi đã có 3 năm gắn bó tại trường trung học phổ thông
-                                        B Hà Nam và tốt nghiệp loại khá vào năm 2016-2017
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about-coll-2">
-                            <div class="after-18">
-                                <h2>Sau 18 tuổi</h2>
-                            </div>
-                            <div class="about-text-card-2">
-                                <div class="about-time">
-                                    <i class="fas fa-calendar-alt"></i><span>2017 - 2020</span>
-                                </div>
-                                <div class="university">
-                                    <h3>Học Cao Đẳng Bách Khoa Hà Nội</h3>
-                                    <p>Tôi đã có 3 năm ngồi trên giảng đường nhà trường với chuyên ngành theo học là tự
-                                        động
-                                        hóa
-                                        và tốt nghiệp loại khá vào năm 2020
-                                    </p>
-                                </div>
-                                <div class="about-time">
-                                    <i class="fas fa-calendar-alt"></i><span>2020 - 2023</span>
-                                </div>
-                                <div class="university">
-                                    <h3>Công ty cổ phần kỹ thuật công nghệ EcoTek</h3>
-                                    <p>Tôi đã gắn bó gần 3 năm với công ty
-                                        tôi quyết định dừng lại vào đầu năm 2023
-                                        và chuyển sang ngành công nghệ thông tin
-                                    </p>
-                                </div>
-                                <div class="about-time">
-                                    <i class="fas fa-calendar-alt"></i><span>16 -11 -2023 (hiện tại)</span>
-                                </div>
-                                <div class="university">
-                                    <h3>Thực tập sinh tại công ty I&E Việt Nam</h3>
-                                    <p>Tôi đang được thực tập trong môi trường doanh nghiệp chuyên về công nghệ chuyển
-                                        đổi
-                                        số ,
-                                        ở đây tôi được đào tạo về cả chuyên môn cũng như tư duy, lộ trình rõ ràng phù
-                                        hợp
-                                        với năng lực của bản thân.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
                 </div>
 
                 <div class="project">
@@ -331,35 +248,35 @@
                         <div class="timeline">
                             <div class="timeline-box left-timeline">
                                 <div class="text-box">
-                                    <h2>Thử thách số 1 (Đã xong)</h2>
+                                    <h3>Thử thách số 0</h3>
                                     <small>6/11-10/11/2023</small>
-                                    <h3>Xây dựng giao diện trang web Khoa Tiếng Italia (HANU)</h3>
+                                    <a href="#">Xây dựng giao diện trang web Khoa Tiếng Italia (HANU)</a>
+
                                 </div>
                             </div>
                             <div class="timeline-box right-timeline">
                                 <div class="text-box">
-                                    <h2>Thử thách số 2 (Đã xong)</h2>
+                                    <h3>Thử thách số 1</h3>
                                     <small>13/11-17/11/2023</small>
-                                    <h3>Lập một website giới thiệu bản thân (portfolio)</h3>
+                                    <a href="">Lập một website giới thiệu bản thân (portfolio)</a>
                                 </div>
                             </div>
                             <div class="timeline-box left-timeline">
                                 <div class="text-box">
-                                    <h2>Thử thách số 3 (Chuẩn bị...)</h2>
+                                    <h3>Thử thách số 2</h3>
                                     <small>20/11-24/11/2023</small>
-                                    <h3>Thiết kế Website giới thiệu về lịch sử Việt Nam</h3>
+                                    <a href="#">Thiết kế Website giới thiệu về lịch sử Việt Nam</a>
                                 </div>
                             </div>
                             <div class="timeline-box right-timeline">
                                 <div class="text-box">
-                                    <h2>Thử Thách Số 4 (Chuẩn bị...)</h2>
+                                    <h3>Thử Thách Số 3</h3>
                                     <small>6/11-10/11/2023</small>
-                                    <h3>Thiết Kế 9 Giao Diện website Theo Chuẩn Code Công Ty</h3>
+                                    <a href="#">Thiết Kế 9 Giao Diện website Theo Chuẩn Code Công Ty</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="social">

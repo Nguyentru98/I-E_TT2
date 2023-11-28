@@ -18,8 +18,8 @@ var lastScrollTop = 0;
 window.addEventListener("scroll", handleScroll);
 
 function handleScroll() {
-  var backToTopButton = document.querySelector(".back-to-top"); // Lấy vị trí cuộn hiện tại
-  var scrollTop = document.documentElement.scrollTop;
+  var backToTopButton = document.querySelector(".back-to-top");
+  var scrollTop = document.documentElement.scrollTop; // lấy vtri cuộn hiện tại
   console.log("scrollTop", scrollTop);
   if (scrollTop > 20 && scrollTop > lastScrollTop) {
     // Kiểm tra nếu vị trí của trang lớn hơn 20 pixel và trang đang cuộn hoặc đứng im
@@ -46,7 +46,6 @@ function timeline() {
     //   "elementVisible",elementVisible,
     //   elementTop < windowHeight - elementVisible,
     // );
-
     if (elementTop < windowHeight - elementVisible) {
       timelines[i].classList.add("active");
     }
@@ -56,21 +55,24 @@ function timeline() {
 // menu mobile
 function toggleSidebar() {
   var element = document.getElementById("sidebar");
-      element.classList.toggle("toogle");
-  // if (element.classList.contains("toogle")) {
-  //   element.classList.remove("toogle");
-  // } else {
-  //   element.classList.add("toogle");
-  // }
+  element.classList.toggle("toogle");
 }
 
 // xem thêm
 function seeMore() {
+  var hidden = document.getElementById("hidden");
   var dot = document.getElementById("dot");
-  var paragraph = document.querySelector(".paragraph");
-  var buttonHome = document.getElementById("button-home");
+  var button = document.getElementById("button-hidden-presently");
+  var hiddenDisplayStyle = window.getComputedStyle(hidden).display;
 
-  paragraph.classList.remove("paragraph");
-  dot.style.display = "none";
-  buttonHome.style.display = "none";
+  if (hiddenDisplayStyle === "none") {
+      hidden.style.display = "inline";
+      dot.style.display = "none";
+      button.innerHTML = "ẩn bớt";
+  } else {
+      hidden.style.display = "none";
+      dot.style.display = "inline";
+      button.innerHTML = "xem thêm";
+  }
 }
+
